@@ -7,7 +7,12 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+				$('#addusr').submit(function() {
+					var c1 = $('#first').val();
+					$('.info1').append(c1);
+				})
 
+			
 
 		});
 
@@ -16,17 +21,32 @@
 <body>
 	<div class="userinput">
 		<ul>
-			<li>First Name: <input id="first"type="text" name="first_name" value=""></li>
-			<li>Last Name: <input id="last"type="text" name=""></li>
+			<li>First Name: <input id="first" type="text" name="first_name" value=""></li>
+			<li>Last Name: <input id="last" type="text" name=""></li>
 			<li>Description:</li>		
 		</ul>
 		<textarea rows="4" cols="35" name="description" form="usrform">Enter description:</textarea>
-		<p class="btn"><button id="submit">Add User</button></p>
+		<form id="addusr">
+			<input type="submit" name="Add User">
+		</form>
 	</div>
 	<div class="output">
-		<textarea rows="5" cols="25" name="descriptoutput" form="usrform">Click for description!</textarea>
-		<textarea rows="5" cols="25" name="descriptoutput" form="usrform">Click for description!</textarea>
-		<textarea rows="5" cols="25" name="descriptoutput" form="usrform">Click for description!</textarea>
+		<div id="card1">
+		<p class="info1"></p>
+
+		<p>Click for a description!</p>
+		</div>
+
+		<div id="card2">
+		<p class="info2"></p>
+		<p>Click for a description!</p>
+		</div>
+		
+
+		<div id="card3">
+		<p class="info2"></p>
+		<p>Click for a description!</p>
+		</div>
 		
 	</div>
 

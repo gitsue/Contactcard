@@ -4,6 +4,7 @@
 div.userinput, .output {
 	display: inline-block;
 	width: 300px;
+	vertical-align: top;
 }
 
 	ul li {
@@ -13,6 +14,21 @@ div.userinput, .output {
 	textarea {
 		margin-left: 40px;
 	}
-	.btn {
+	#addusr {
 		margin-left: 40px;
+	}
+	#addusr input {
+		width: 70px;
+		height: 25px;
+		border-radius: 5px;
+		background: linear-gradient(white,gray);
+	}
+	#card1, #card2, #card3 {
+		border: 1px solid black;
+		width: 180px;
+		height: 80px;
+		background: lightblue;
+	}
+	div.output p {
+		margin: 0px;
 	}
