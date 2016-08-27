@@ -1,34 +1,39 @@
 * {
 /*	outline: 1px dotted red;*/
 }
-div.userinput, .output {
-	display: inline-block;
-	width: 300px;
-	vertical-align: top;
+#container {
+	width: 970px;
 }
+	div.userinput {
+		display: inline-block;
+		width: 300px;
+		vertical-align: top;
+	}
+		#addusr {
+			margin-left: 40px;
+		}
+		form input {
+			margin: 15px;
+		}
 
-	ul li {
-		list-style: none;
-		margin: 15px 0px 15px 0px;
+		form input#add {
+			margin: 0px;
+			background: linear-gradient(white,gray);
+			width: 80px;
+			height: 25px;
+		}
+
+	div.rightside  {
+		display: inline-block;
 	}
-	textarea {
-		margin-left: 40px;
-	}
-	#addusr {
-		margin-left: 40px;
-	}
-	#addusr input {
-		width: 70px;
-		height: 25px;
-		border-radius: 5px;
-		background: linear-gradient(white,gray);
-	}
-	#card1, #card2, #card3 {
-		border: 1px solid black;
-		width: 180px;
-		height: 80px;
-		background: lightblue;
-	}
-	div.output p {
-		margin: 0px;
-	}
+		div.output {
+			border: 1px solid black;
+			width: 200px;
+			height: 80px;
+			background: lightblue;
+			vertical-align: top;
+			margin-bottom: 15px;
+		}
+			div.output p {
+				margin-left: 15px;
+			}
