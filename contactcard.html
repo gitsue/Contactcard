@@ -10,14 +10,21 @@
 			$('#addusr').submit(function() {
 				var name1 = $('input#first').val();
 				var name2 = $('input#last').val();
-				var descr = $('textarea').val();
 
 				$('.rightside').append("<div class='output'>"+"<p>" + name1 +" " +name2 +"</p>" + "<p>"+"Click Here for a description!" +"</p>"+"</div>"
 
 					);
 				return false;
 			})
-			
+
+
+			$('.rightside').on("click",".output", function() {
+				var descr = $('textarea').val();
+				$('.output').html(descr);
+					
+					
+			})
+		
 
 		});
 

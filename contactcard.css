@@ -25,6 +25,7 @@
 
 	div.rightside  {
 		display: inline-block;
+		height: auto;
 	}
 		div.output {
 			border: 1px solid black;
